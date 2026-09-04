@@ -35,7 +35,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
      *
      * @return iterable
      */
-    protected function generateCombinations($name, $numbers)
+    protected static function generateCombinations($name, $numbers)
     {
         $items = is_callable($numbers) ? $numbers() : $numbers;
         $items = $items instanceof \Traversable ? iterator_to_array($items) : (array) $items;

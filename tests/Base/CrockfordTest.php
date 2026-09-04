@@ -80,7 +80,7 @@ class CrockfordTest extends TestCase
      *
      * Based on http://git.io/jMnYXg
      */
-    public function provideCrockford()
+    public static function provideCrockford()
     {
         yield ['0',     '0',      10, false];
         yield ['00',    '0',      10, true];

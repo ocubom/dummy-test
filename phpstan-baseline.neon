@@ -1,0 +1,637 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Binary operation "\+" between mixed and int results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Binary operation "\+" between mixed and int\<0, max\> results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Binary operation "\." between mixed and string results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Cannot access offset int on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Cannot access offset int\<0, max\> on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\:\:fromBase\(\) has parameter \$map with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\:\:toBase\(\) has parameter \$map with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Offset int\<0, max\> might not exist on array\{\}\|array\{\(float\|int\<min, \-1\>\|int\<1, max\>\)\}\.$#'
+			identifier: offsetAccess.notFound
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_values expects array, array\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Parameter \#1 \$string of function strlen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Base.php
+
+		-
+			message: '#^Parameter \#1 \$value of function count expects array\|Countable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Base.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\\Base58\:\:getMap\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base/Base58.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\\Crockford\:\:getMap\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base/Crockford.php
+
+		-
+			message: '#^Constant Ocubom\\Math\\Base\\Numeric\:\:NAMED_BASES type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base/Numeric.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\\Numeric\:\:getMap\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base/Numeric.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Base\\Numeric\:\:getMap\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Base/Numeric.php
+
+		-
+			message: '#^Property Ocubom\\Math\\Base\\Numeric\:\:\$maps type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Base/Numeric.php
+
+		-
+			message: '#^Method Ocubom\\Math\\BaseInterface\:\:getMap\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/BaseInterface.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:provideNativeBaseConvert\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has parameter \$base1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has parameter \$base2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has parameter \$insensitive with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has parameter \$number1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\Base58Test\:\:testConversionBetweenBases\(\) has parameter \$number2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Parameter \#1 \$num of function base_convert expects string, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/Base/Base58Test.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:provideCrockford\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordDecode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordDecode\(\) has parameter \$base with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordDecode\(\) has parameter \$checksum with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordDecode\(\) has parameter \$crockford with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordDecode\(\) has parameter \$number with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordEncode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordEncode\(\) has parameter \$base with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordEncode\(\) has parameter \$checksum with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordEncode\(\) has parameter \$crockford with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testCrockfordEncode\(\) has parameter \$number with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testIgnoreHypens\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testIgnoreHypens\(\) has parameter \$base with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testIgnoreHypens\(\) has parameter \$checksum with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testIgnoreHypens\(\) has parameter \$crockford with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testIgnoreHypens\(\) has parameter \$number with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testInvalidChecksumCharacterMustThrownException\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testInvalidChecksumInNumberMustThrownException\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\Base\\CrockfordTest\:\:testInvalidDigitsInNumberMustThrownException\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\crockford_decode expects int\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\crockford_encode expects int\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#1 \$string of function chunk_split expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#2 \$base of function Ocubom\\Math\\crockford_decode expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#2 \$base of function Ocubom\\Math\\crockford_encode expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#3 \$checksum of function Ocubom\\Math\\crockford_decode expects bool, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Parameter \#3 \$checksum of function Ocubom\\Math\\crockford_encode expects bool, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/Base/CrockfordTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:provideGMP\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:provideInvalidBases\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:provideNativeBaseConvert\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:provideNativeDecConvert\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has parameter \$base1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has parameter \$base2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has parameter \$insensitive with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has parameter \$number1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testConversionBetweenBases\(\) has parameter \$number2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testEmptyNumberMustReturnZeroInAnyConversion\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidBaseMustThrownExceptions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidBaseMustThrownExceptions\(\) has parameter \$invalid with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidBaseMustThrownExceptions\(\) has parameter \$number with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidBaseMustThrownExceptions\(\) has parameter \$source with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidBaseMustThrownExceptions\(\) has parameter \$target with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\BaseConvertTest\:\:testInvalidDigitsInNumberMustThrownException\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$num of function decbin expects int, float\|int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$num of function dechex expects int, float\|int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$num of function decoct expects int, float\|int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\base_convert expects int\|string, int\|string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\base_convert expects int\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\base_convert expects int\|string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#1 \$string of function bin2hex expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#2 \$source of function Ocubom\\Math\\base_convert expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#3 \$target of function Ocubom\\Math\\base_convert expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Part \$invalid \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Property Ocubom\\Math\\Tests\\BaseConvertTest\:\:\$bytes has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: tests/BaseConvertTest.php
+
+		-
+			message: '#^Cannot access offset 0 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/TestCase.php
+
+		-
+			message: '#^Cannot access offset 1 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/TestCase.php
+
+		-
+			message: '#^Cannot access offset 2 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/TestCase.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 3
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has parameter \$base1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has parameter \$base2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has parameter \$insensitive with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has parameter \$number1 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:doTestConversionBetweenBases\(\) has parameter \$number2 with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:generateCombinations\(\) has parameter \$name with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:generateCombinations\(\) has parameter \$numbers with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:generateCombinations\(\) return type has no value type specified in iterable type iterable\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:toText\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:toText\(\) has parameter \$base with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Method Ocubom\\Math\\Tests\\TestCase\:\:toText\(\) has parameter \$number with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#1 \$number of function Ocubom\\Math\\base_convert expects int\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#1 \$string of function base64_encode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#2 \$source of function Ocubom\\Math\\base_convert expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#3 \$target of function Ocubom\\Math\\base_convert expects int\|Ocubom\\Math\\BaseInterface\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#3 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#4 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Parameter \#1 \$string of function base64_encode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/gmp_generate.php

@@ -23,8 +23,8 @@ use function Ocubom\Math\base_convert;
  */
 class BaseConvertTest extends TestCase
 {
-    const MIN_BASE = 2;
-    const MAX_BASE = 62;
+    public const MIN_BASE = 2;
+    public const MAX_BASE = 62;
 
     public static $bytes;
 
@@ -74,7 +74,7 @@ class BaseConvertTest extends TestCase
         Base::Convert('2i4h1a3g0', 16, 62);
     }
 
-    public function provideInvalidBases()
+    public static function provideInvalidBases()
     {
         yield 'source base <2' => ['', self::MIN_BASE - 1, 10, self::MIN_BASE - 1];
         yield 'target base <2' => ['', 10, self::MIN_BASE - 1, self::MIN_BASE - 1];
@@ -86,9 +86,9 @@ class BaseConvertTest extends TestCase
         yield 'target base unknown' => ['', 10, 'unknown', 'unknown'];
     }
 
-    public function provideNativeBaseConvert()
+    public static function provideNativeBaseConvert()
     {
-        return $this->generateCombinations('native base_convert', function () {
+        return self::generateCombinations('native base_convert', function () {
             // Uses a random bytes (with odd length)
             $bytes = self::$bytes ?? self::$bytes = random_bytes(5);
             yield [$bytes, 'bin'];
@@ -102,9 +102,9 @@ class BaseConvertTest extends TestCase
         });
     }
 
-    public function provideNativeDecConvert()
+    public static function provideNativeDecConvert()
     {
-        return $this->generateCombinations('native dec{bin|oct|hex}', function () {
+        return self::generateCombinations('native dec{bin|oct|hex}', function () {
             // Uses a random bytes (with odd length)
             $bytes = self::$bytes ?? self::$bytes = random_bytes(5);
             yield [$bytes, 'bin'];
@@ -119,9 +119,9 @@ class BaseConvertTest extends TestCase
         });
     }
 
-    public function provideGMP()
+    public static function provideGMP()
     {
-        return $this->generateCombinations('UUID in all bases', function () {
+        return self::generateCombinations('UUID in all bases', function () {
             // Random UUID: C3E51D3E-996C-11E4-9FF0-73AF89BEA664
             yield ['C3E51D3E996C11E49FF073AF89BEA664', 16, true]; // Case insensitive test
 

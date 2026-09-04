@@ -21,7 +21,7 @@ use Ocubom\Math\AbstractBase;
  */
 class Base58 extends AbstractBase
 {
-    const MAP = [
+    public const MAP = [
         '' => '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz',
         1 => 0, 1, 2, 3, 4, 5, 6, 7, 8, 'A' => 9,
         'B' => 10, 'C' => 11, 'D' => 12, 'E' => 13, 'F' => 14, 'G' => 15,

@@ -24,9 +24,9 @@ class Base58Test extends TestCase
         $this->doTestConversionBetweenBases($number1, $base1, $number2, $base2, $insensitive);
     }
 
-    public function provideNativeBaseConvert()
+    public static function provideNativeBaseConvert()
     {
-        return $this->generateCombinations(__FUNCTION__, function () {
+        return self::generateCombinations(__FUNCTION__, function () {
             yield ['5pA', new Base58()];
 
             for ($base = 2; $base < 36; ++$base) {

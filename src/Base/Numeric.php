@@ -24,21 +24,21 @@ class Numeric extends AbstractBase
      *
      * @see https://en.wikipedia.org/wiki/Base62
      */
-    const SYMBOLS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    public const SYMBOLS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
     /**
      * Bases with special names.
      *
      * @var array
      */
-    const NAMED_BASES = [
+    public const NAMED_BASES = [
         'bin' => 2,
         'dec' => 10,
         'hex' => 16,
         'oct' => 8,
     ];
 
-    const OPTIONS = ['options' => [
+    public const OPTIONS = ['options' => [
         'min_range' => 2,
         'max_range' => 62,
     ]];
